@@ -1,0 +1,46 @@
+{
+    "total_chain_operations": {
+        "lagged": 1,
+        "knnreg": 1
+    },
+    "depth": 2,
+    "nodes": [
+        {
+            "operation_id": 1,
+            "operation_type": "lagged",
+            "operation_name": "LaggedTransformationImplementation",
+            "custom_params": {
+                "window_size": 12.881320807708477
+            },
+            "params": {
+                "window_size": 12.881320807708477
+            },
+            "nodes_from": [],
+            "fitted_operation_path": "fitted_operations\\operation_1.pkl"
+        },
+        {
+            "operation_id": 0,
+            "operation_type": "knnreg",
+            "operation_name": "CustomKnnRegImplementation",
+            "custom_params": {
+                "n_neighbors": 4,
+                "p": 2,
+                "weights": "distance"
+            },
+            "params": {
+                "algorithm": "auto",
+                "leaf_size": 30,
+                "metric": "minkowski",
+                "metric_params": null,
+                "n_jobs": null,
+                "n_neighbors": 4,
+                "p": 2,
+                "weights": "distance"
+            },
+            "nodes_from": [
+                1
+            ],
+            "fitted_operation_path": "fitted_operations\\operation_0.pkl"
+        }
+    ]
+}
